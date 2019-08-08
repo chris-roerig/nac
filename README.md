@@ -61,7 +61,7 @@ require 'nac'
 config = Nac::Config.new('my_config')
 
 config.set(%[user name first], 'Homer')
-config.set(%[user name last],st 'Simpson')
+config.set(%[user name last], 'Simpson')
 
 puts config.get('user')
 #=> { name: { first: 'Homer', last: 'Simpson' }}
@@ -89,7 +89,7 @@ puts config.get(:look)
 * `init!`: When true, force the configuration file to be rewritten. Default is `false`.
 
 **Note:** One doesn't need to specify `init!` when using `template`. 
-The template will not be written if if the configuration file exists.
+The template will not be written if the configuration file exists.
 However, using `init!` will re-initialize the config file and the 
 template *will* be written. Similarly, `template` is not required when 
 using `init!`.
