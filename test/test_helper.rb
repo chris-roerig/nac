@@ -10,4 +10,4 @@ require 'minitest/reporters'
 
 $LOAD_PATH.unshift File.expand_path('../lib', __dir__)
 
-Minitest::Reporters.use!
+Minitest::Reporters.use! Minitest::Reporters::SpecReporter.new
