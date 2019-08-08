@@ -2,6 +2,9 @@
 
 A very simple yet flexible configuration writer/reader library. 
 
+[![CircleCI](https://circleci.com/gh/chris-roerig/nac/tree/master.svg?style=svg)](https://circleci.com/gh/chris-roerig/nac/tree/master)
+[![Maintainability](https://api.codeclimate.com/v1/badges/ff7b794633ad66c7d6db/maintainability)](https://codeclimate.com/github/chris-roerig/nac/maintainability)
+
 ## Installation
 
 Add this line to your application's Gemfile:
