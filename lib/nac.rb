@@ -3,5 +3,5 @@
 require 'yaml'
 require 'fileutils'
 
-require_relative 'nac/config'
-require_relative 'nac/version'
+require 'nac/config'
+require 'nac/version'

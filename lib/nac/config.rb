@@ -21,7 +21,7 @@ module Nac
       end
     end
 
-    def get(keys = nil)
+    def get(keys = nil, default = nil)
       return @cache unless keys
 
       val = @cache
@@ -32,7 +32,7 @@ module Nac
 
       val
     rescue NoMethodError
-      nil
+      default
     end
 
     def set(keys, value)

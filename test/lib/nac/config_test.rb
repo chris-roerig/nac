@@ -128,12 +128,12 @@ module Nac
       source.unlink
     end
 
-    def test_it_returns_nil_if_keys_are_invalid
+    def test_it_returns_the_default_if_keys_are_invalid
       source = Tempfile.new
 
       config = Config.new(source)
 
-      assert_nil config.get(%i[this is])
+      assert_equal config.get(%i[this is], :not_a_droid), :not_a_droid
     ensure
       source.close
       source.unlink
