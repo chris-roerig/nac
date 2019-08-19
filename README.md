@@ -76,6 +76,10 @@ puts config.get(%[user name last])
 puts config.get(%[user name middle])
 #=> nil
 
+# Or you can specify the return value if the key doesn't exist
+puts config.get(%[user name middle], 'J')
+#=> 'J'
+
 # Symbol arrays work too!
 
 config.set(%i{look ma no}, 'hands')
