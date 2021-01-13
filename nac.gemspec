@@ -37,6 +37,7 @@ Gem::Specification.new do |spec|
   spec.require_paths = ["lib"]
 
   spec.add_development_dependency "simplecov"
+  spec.add_development_dependency "json", ">= 2.3.0"
   spec.add_development_dependency "minitest-reporters", "~> 1.3"
   spec.add_development_dependency "guard", "~> 2.15"
   spec.add_development_dependency "guard-minitest", "~> 2.4"
